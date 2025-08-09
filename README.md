@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with **Next.js 15**, **TypeScript**, **Tailwind CSS**, and **shadcn/ui**. Showcases my projects, skills, and professional experience with a clean, animated design.
 
-![Portfolio Preview](public/project/portfolio.png)
+![Portfolio Preview](public/project/portfolioimg.png)
 
 ## ✨ Features
 
