@@ -1,22 +1,16 @@
 'use client'
-import { About } from '@/components/page/About'
+import About  from '@/components/page/About'
 import Navbar from '@/components/navbar/layout'
 import Project from '@/components/page/Project'
-import Skills from '@/components/page/Skill'
+import Skills from '@/components/page/Skills'
 import React from 'react'
 import Experience from '@/components/page/Experience'
 import Contact from '@/components/page/Contact-us'
 import Footer from '@/components/page/footer'
 
-import ThemeToggleButton from '@/components/ui/theme-toggle-button'
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
-import { useTheme } from 'next-themes'
 
-import { Button } from "@/components/ui/button"
-import { Moon, Sun } from "lucide-react"
-import Navmenu from '@/components/navmenu/navmenu'
+import Navmenu from '@/components/navmenu'
 function App() {
-  const { setTheme } = useTheme()
   return (
     <div className="relative bg-gradient-to-b from-neutral-50 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800">
       {/*  */}
@@ -75,7 +69,7 @@ function App() {
         </div>
       </div>
       <Footer />
-      <Navmenu/>
+      <Navmenu />
     </div>
   )
 }

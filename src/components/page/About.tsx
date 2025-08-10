@@ -28,5 +28,4 @@ function About({ }: Props) {
         </div>
     )
 }
-
-export { About }
+export default About;
