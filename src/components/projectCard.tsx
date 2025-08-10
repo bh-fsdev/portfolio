@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import { ExternalLink } from 'lucide-react'
 import * as motion from "motion/react-client"
 import githubIcon from '../../public/icons/githubIcon.svg'
@@ -8,7 +8,7 @@ import githubIcon from '../../public/icons/githubIcon.svg'
 type ProjectProps = {
     title: string;
     description: string;
-    image: string;
+    image: string | StaticImageData;
     liveUrl: string;
     githubUrl: string;
     isLive: boolean;

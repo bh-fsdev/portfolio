@@ -75,7 +75,7 @@ function Right() {
                             href={href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="sm:p-2 p-0.5 dark:bg-neutral-50 bg-neutral-100 border border-black dark:border-white rounded-md"
+                            className="sm:p-2 p-0.5 dark:bg-neutral-800 bg-neutral-100 border border-black dark:border-white rounded-md"
                         >
                             <span className=''>
                                 {svg}

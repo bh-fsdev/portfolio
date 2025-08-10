@@ -38,7 +38,8 @@ function ExperienceCard({ id, company, role, date, location, description, skills
         const mappedName = skillMap[skillName] || skillName;
         return logo.find(item => item.name === mappedName);
     };
-    const [hoveredIndex, setHoveredIndex] = useState(null);
+    const [hoveredIndex, setHoveredIndex] = useState<string | null>(null);
+
 
     return (
         <motion.div

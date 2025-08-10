@@ -11,9 +11,10 @@ interface Star {
 }
 
 interface BlinkingStarsProps {
-  containerRef: React.RefObject<HTMLElement>
+  containerRef: React.RefObject<HTMLDivElement | null>
   count?: number
 }
+
 
 const BlinkingStars: React.FC<BlinkingStarsProps> = ({ containerRef, count = 10 }) => {
   const [stars, setStars] = useState<Star[]>([])

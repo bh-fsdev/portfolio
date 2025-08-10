@@ -1,14 +1,14 @@
 "use client";
 
 import * as React from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, Transition } from "framer-motion";
 import { useOnClickOutside } from "usehooks-ts";
 import { cn } from "@/lib/utils";
 import { LucideIcon } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"; // shadcn tooltip
 
-
 interface Tab {
+    id: string,
     title: string;
     icon: LucideIcon;
     type?: never;
@@ -20,7 +20,7 @@ interface Separator {
     icon?: never;
 }
 
-type TabItem = Tab | Separator;
+export type TabItem = Tab | Separator;
 
 interface ExpandableTabsProps {
     tabs: TabItem[];
@@ -48,7 +48,15 @@ const spanVariants = {
     exit: { width: 0, opacity: 0 },
 };
 
-const transition = { delay: 0.1, type: "spring", bounce: 0, duration: 0.6 };
+
+const transition: Transition = {
+    delay: 0.1,
+    type: "spring",
+    bounce: 0,
+    duration: 0.6,
+};
+
+// const transition = { delay: 0.1, type: "spring", bounce: 0, duration: 0.6 };
 
 export function ExpandableTabs({
     tabs,
@@ -57,12 +65,19 @@ export function ExpandableTabs({
     onChange,
 }: ExpandableTabsProps) {
     const [selected, setSelected] = React.useState<number | null>(null);
-    const outsideClickRef = React.useRef(null);
+    // const outsideClickRef = React.useRef(null);
+
+    const outsideClickRef = React.useRef<HTMLDivElement>(null!);
 
     useOnClickOutside(outsideClickRef, () => {
         setSelected(null);
         onChange?.(null);
     });
+
+    // useOnClickOutside(outsideClickRef, () => {
+    //     setSelected(null);
+    //     onChange?.(null);
+    // });
 
     const handleSelect = (index: number) => {
         setSelected(index);

@@ -3,9 +3,8 @@ import React, { useRef } from 'react'
 import BlinkingStars from '../BlinkingStars'
 import BlinkBorder from '../Blink-border'
 
-type Props = {}
 
-function Contact({ }: Props) {
+function Contact() {
     const container = useRef<HTMLElement | null>(null)
 
     return (
