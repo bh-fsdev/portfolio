@@ -42,9 +42,9 @@ function Project() {
             title: "Portfolio",
             description: "A personal portfolio website showcasing my projects, skills, and experience. Built with Nextjs , Tailwind CSS and framer-motion for a modern, responsive design.",
             image: portfolio,
-            liveUrl: "none",
-            githubUrl: "none",
-            isLive: false,
+            liveUrl: "https://bhola-portfolio.vercel.app/",
+            githubUrl: "https://github.com/bh-fsdev/portfolio",
+            isLive: true,
         },
         {
             title: "JobHunty",
