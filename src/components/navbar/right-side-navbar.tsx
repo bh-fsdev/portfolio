@@ -31,7 +31,7 @@ function Right() {
                         </span>Available</div>
                 </div>
             </div>
-          
+
             <div className="sm:mt-4 mt-1 relative sm:w-50 w-30 mob-m:w-40 overflow-hidden sm:text-lg mob-m:text-sm text-[8px] text-neutral-500 dark:text-neutral-100 border border-neutral-50 py-1 px-4  dark:border-neutral-600  bg-neutral-400/50 dark:bg-neutral-500/80">
                 <BlinkBorder />
                 <AnimatePresence mode='wait'>
@@ -75,15 +75,15 @@ function Right() {
                             href={href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="sm:p-2 p-0.5 dark:bg-neutral-800 bg-neutral-100 border border-black dark:border-white rounded-md"
+                            className="sm:p-2 p-0.5   border border-black dark:border-white rounded-md"
                         >
                             <span className=''>
                                 {svg}
                             </span>
                         </a>
-                        <span className="absolute bottom-9 left-1/2 transform -translate-x-1/2 mb-2 w-max bg-white text-mainBlack font-medium text-sm rounded-md py-1 px-1.5 scale-0 group-hover:scale-100 duration-100">
+                        <span className="absolute bottom-9 left-1/2 transform -translate-x-1/2 mb-2 w-max bg-neutral-700 text-mainBlack font-medium text-sm rounded-md py-1 px-1.5 scale-0 group-hover:scale-100 duration-100 dark:bg-neutral-200 text-white dark:text-black">
                             {name}
-                            <span className="absolute top-full left-1/2 transform -translate-x-1/2 border-8 border-transparent border-t-white">
+                            <span className="absolute top-full left-1/2 transform -translate-x-1/2 border-8 border-transparent dark:border-t-neutral-200 border-t-neutral-700">
                             </span>
                         </span>
                     </div>
