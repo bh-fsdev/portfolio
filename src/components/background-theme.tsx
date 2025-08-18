@@ -36,7 +36,7 @@ function BackgroundTheme({ children }: { children: React.ReactNode }) {
             radial-gradient(circle at 1px 1px, rgba(0, 0, 0, 0.08) 1px, transparent 0px) 0% 0% / 8px 8px,
             repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 0, 0, 0.02) 2px, rgba(0, 0, 0, 0.02) 4px) 0% 0% / 32px 32px,
             repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0, 0, 0, 0.02) 2px, rgba(0, 0, 0, 0.02) 4px) 0% 0% / 32px 32px`,
-          backgroundColor: 'rgb(250, 249, 246)',
+          backgroundColor: '#ffffff',
         }}
       />
 
